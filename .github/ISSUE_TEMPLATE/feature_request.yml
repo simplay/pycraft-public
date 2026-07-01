@@ -1,0 +1,33 @@
+name: Feature Request
+description: Suggest an idea or a player-facing improvement for PyCraft.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your ideas! Please explain the problem you are trying to solve or the specific improvement you want to see.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you would like to see added to the game.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case / Problem Solved
+      description: Why does this matter? What specific player problem does this solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples from Other Games
+      description: Are there other games or engines that handle this well? (Optional)
+    validations:
+      required: false
