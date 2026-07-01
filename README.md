@@ -1,5 +1,8 @@
 # PyCraft - Public
 
+![image](https://github.com/user-attachments/assets/eefaf81c-5e64-47b6-b6a8-ec2811c16af3)
+
+
 This repository is the public space for issues and the roadmap for PyCraft.
 
 It does not contain the game source code. The source code is intentionally kept in a private
