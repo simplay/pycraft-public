@@ -1,0 +1,78 @@
+name: Bug Report
+description: File a bug report to help us improve PyCraft.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+        Before you submit, please search the existing issues to ensure it hasn't been reported already.
+
+  - type: input
+    id: version
+    attributes:
+      label: PyCraft Version
+      description: Which version of the game are you running? (e.g., v0.7.1)
+      placeholder: "vX.Y.Z"
+    validations:
+      required: true
+
+  - type: textarea
+    id: system-specs
+    attributes:
+      label: System Specifications
+      description: Please list your Operating System, CPU, RAM, and GPU model.
+      placeholder: |
+        OS: Windows 11
+        CPU: AMD Ryzen 5 5600X
+        RAM: 16GB
+        GPU: NVIDIA RTX 3060
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a numbered list of actions that triggers the problem.
+      placeholder: |
+        1. Open the game.
+        2. Load a new world.
+        3. Walk to the edge of a loaded chunk...
+    validations:
+      required: true
+
+  - type: input
+    id: coordinates
+    attributes:
+      label: In-Game Coordinates
+      description: For visual, terrain, or chunk loading bugs, include your in-game X, Y, Z coordinates (Press F3 in-game to view).
+      placeholder: "X: 100, Y: 64, Z: -250"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: attachments
+    attributes:
+      label: Crash Logs & Attachments
+      description: Did you attach screenshots, videos, or the `game.log` file? Drag and drop them into this issue.
+      options:
+        - label: I have attached the relevant logs or media files.
+          required: false
